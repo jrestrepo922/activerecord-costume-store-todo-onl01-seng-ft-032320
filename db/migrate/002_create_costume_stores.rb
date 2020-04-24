@@ -3,7 +3,7 @@
 class CreateCostumeStores < ActiveRecord::Migration
 
   def change
-    create_table :costume_stores |t|
+    create_table :costume_stores do |t|
       t.string :name
       t.string :location
       t.integer :costume_inventory
@@ -13,4 +13,4 @@ class CreateCostumeStores < ActiveRecord::Migration
       t.datetime :closing_time
     end
   end
-end
+ends
